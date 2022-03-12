@@ -55,7 +55,12 @@ Para cada nuevo nodo, debe ejecutar el comando en el maestro, copiar la salida y
 Comandos básicos de microk8s:
 
 ‎El comando iniciará todos los servicios de Kubernetes habilitados: ‎startmicrok8s.start
+  
 ‎El comando le dará el estado de los servicios: ‎inspectmicrok8s.inspect
+  
 ‎El comando detendrá todos los servicios de Kubernetes: ‎stopmicrok8s.stop
+  
 ‎Puede habilitar fácilmente los complementos de Kubernetes, por ejemplo. para habilitar "kubedns": ‎microk8s.enable dns
+  
 ‎Para obtener el estado del clúster: ‎microk8s.kubectl cluster-info
+  
