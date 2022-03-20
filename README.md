@@ -8,4 +8,6 @@ Cluster que da servicio a soluciones para ecommerce days como Black Friday.
 
 3 - Configurar los servicios
 
-4 - Excluir mantenimiento en el e-day
+4 - Crear cluster GKE
+
+5 - Excluir mantenimiento en el e-day
