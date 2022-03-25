@@ -3,10 +3,14 @@ Configuración
 ### 1 Crear un clúster de GKE
 
 Configurar la zona del clúster:
-gcloud config set compute/zone us-central1-f
+
+`gcloud config set compute/zone us-central1-f`
+
 
 Habilitar la API de Container Registry:
-gcloud services enable container.googleapis.com
+
+`gcloud services enable container.googleapis.com` 
+
 
 Crear un clúster de GKE llamado fancy-cluster con 3 nodos
 gcloud container clusters create fancy-cluster --num-nodes 3
@@ -50,7 +54,7 @@ Puede ver su historial de compilaciones o el proceso en tiempo real si hace clic
 Ahora que creó un contenedor para su sitio web y lo envió a Google Container Registry, es hora de implementarlo en Kubernetes.
 
 
-### 4 Implementar el contenedor en GKE
+### 3 Implementar el contenedor en GKE
 
 Para implementar y administrar aplicaciones en un clúster de GKE, debe comunicarse con el sistema de administración de clústeres de Kubernetes. Normalmente, esto se hace con la herramienta de línea de comandos kubectl.
 
@@ -113,7 +117,7 @@ kubectl get all
 El ReplicaSet vio que el pod tenía el estado Terminating y activó un pod nuevo para mantener el recuento deseado de réplicas
 
 
-### 5 Exponer el contenedor mediante un servicio
+### 4 Exponer el contenedor mediante un servicio
 
 Exponer la aplicación al tráfico de Internet de forma explícita mediante un recurso Service, que proporciona herramientas de redes y compatibilidad con IP a los Pods de la aplicación. GKE crea una IP externa y un balanceador de cargas para su aplicación.
 
@@ -126,7 +130,7 @@ kubectl get service:
 Para verificar que puede acceder a la IP externa cópiela y escriba la URL (como http://203.0.113.0) en su navegador.
 
 
-### 6 Escalar el contenedor a varias réplicas
+### 5 Escalar el contenedor a varias réplicas
 
 Se suele realizar cuando el tráfico ha crecido.
 Para escalar el Deployment a máximo 3 réplicas ejecutar:
@@ -139,7 +143,7 @@ Kubectl get all
 
 
 
-### 7 Modificar el sitio web
+### 6 Modificar el sitio web
 
 Por ejemplo, cambiar la página principal de su sitio porque considera que debería ofrecer más información sobre la identidad de la empresa y el producto que vende.
 
@@ -168,7 +172,7 @@ gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:2.0.0 .
 
 
 
-### 8 Lanzar una versión nueva sin tiempo de inactividad
+### 7 Lanzar una versión nueva sin tiempo de inactividad
 
 Use el siguiente comando a fin de indicarle a Kubernetes que desea actualizar la imagen para su implementación a una versión nueva:
 
