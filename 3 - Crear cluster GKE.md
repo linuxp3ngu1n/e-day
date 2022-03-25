@@ -83,16 +83,16 @@ El siguiente comando hará que Kubernetes cree un recurso Deployment llamado mon
 
 
 Verifique que el recurso Deployment se haya creado correctamente por separado:
-# Mostrar pods
+Mostrar pods
 `kubectl get pods`
 
-# Mostrar deployments
+Mostrar deployments
 `kubectl get deployments`
 
-# Mostrar replica sets
+Mostrar replica sets
 `kubectl get rs`
 
-# Incluso combinarlos
+Incluso combinarlos
 `kubectl get pods,deployments`
 
 
