@@ -27,13 +27,11 @@ El hosname lo nombramos como k8s-0x, donde x va del 1 al 3, ya que tenemos 3 má
 
 ## Configuración del hostname de los nodos del Raspberry Pi
 
-------
-
 Para empezar, ejecutamos el siguiente comando que nos mostrará un menú desde el cual podremos configurar nuestra Raspberry fácilmente.
 
-```shell
-sudo raspi-config
-```
+`shell`
+`sudo raspi-config`
+
 
 En el apartado **System Options** > **Hostname** cambiaremos el nombre de equipo de la Raspberry, en nuestro caso las llamaremos `k8s-0X` donde X es el número de nodo de cada Raspberry.
 
