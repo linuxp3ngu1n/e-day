@@ -25,7 +25,7 @@ El hosname lo nombramos como k8s-0x, donde x va del 1 al 3, ya que tenemos 3 má
 `sudo reboot`
 
 
-## Configuración del hostname de los nodos del Raspberry Pi
+#### Configuración del hostname de los nodos del Raspberry Pi
 
 Para empezar, ejecutamos el siguiente comando que nos mostrará un menú desde el cual podremos configurar nuestra Raspberry fácilmente.
 
